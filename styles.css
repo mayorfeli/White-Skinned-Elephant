@@ -1,0 +1,113 @@
+
+
+
+* {box-sizing: border-box;
+}
+
+@font-face {
+  font-family:FrankG_Bold;
+  src: url(fonts/FrankG_Bold.woff);
+}
+
+
+@font-face {
+  font-family:FrankRuhlProLight;
+  src: url(fonts/FrankRuhlProLight.woff);
+}
+
+
+
+
+body{ margin: 0;
+margin-top: 130px;
+background-color: #001511;
+ height: 700px;
+ width: 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+    background-size: cover;
+     margin: auto;
+overflow:hidden;
+  padding: 10px;
+  }
+
+
+
+
+
+iframe{
+  margin: 30px;
+  margin-top: 40px;
+  object-fit: cover;
+  width: 95%;
+
+}
+
+
+
+
+
+
+
+
+.pop-up{
+  color:#020;
+  background:white;
+  width:400px;
+  height: 540px;
+  text-align:center;
+  padding:9px;
+  border-radius:10px;
+  position:absolute;
+  top:50vh;
+  left: 50vw;
+  margin-left: -200px;
+  margin-top: -270px;
+  opacity: 1;
+  animation:drop 1.5s ease forwards;
+  transform-origin:10px 10px;
+
+}
+.close{
+  font-size:20px;
+  color:black;
+  border-radius:50%;
+  padding:0;
+  background:transparent;
+  border:none;
+  position:absolute;
+  top:0;
+  right:9px; 
+
+
+}
+.close:hover{
+  cursor:pointer;
+  color:red;
+}
+@keyframes drop{
+  0%{
+    opacity:0;
+    transform:translateY(-50vh);
+  }
+  100%{
+    transform:translateY(0);
+    opacity:1;
+  }
+}
+
+  @keyframes swing{
+    0%{
+      transform:translateY(0) rotateZ(0deg);
+    }
+    100%{
+      transform:translateY(150vh) rotateZ(75deg);
+    }
+  }
+
+
+.row{
+  padding: 30px;
+}
+
+
